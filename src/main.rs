@@ -18,5 +18,9 @@ fn main() {
             .ok()
             .expect("Failed to read line");
 
+        let guess: u32 = guess.trim().parse()
+            .ok()
+            .expect("Please type a number!");
+
         println!("You guessed: {}", guess);
 }
